@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container::before{
+    content: "";
+    position: absolute;
+    height: 330px;
+    width: 330px;
+    border-radius: 50%;
+    background: linear-gradient(#006da4 , #0ad1c8);
+    transform: translate(-490px,-150px);
+}
+.container::after{
+    content: "";
+    position: absolute;
+    height: 290px;
+    width: 290px;
+    border-radius: 50%;
+    background: linear-gradient(#032030 , #628ecb);
+    transform: translate(490px,170px);
+}
+.container .ball-1{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #118ab2;
+    transform: translate(-250px,200px);
+    position: absolute;
+}
+.container  .ball-2{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background: #118ab2;
+    transform: translate(-10px,-220px);
+    position: absolute;
+}
+.container  .ball-3{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #118ab2;
+    transform: translate(150px,250px);
+    position: absolute;
+}
+.container .box{
+    height: 86vh;
+    width: 75%;
+    padding: 0,20px;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 10;
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(18px);
+}
+.container .box:hover{
+    border-color: #006da4;
+}
+.container .box nav{
+    height: 7%;
+    width: 95%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px auto;
+    padding: 20px;
+}
+.container .box nav ul li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.container .box nav ul li a{
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.container .box nav ul li a:hover{
+    /* font-size: 15px; */
+    color: #006da4;
+    transition: all 0.5s ease;
+    background-position: 0;
+}
+.container .box nav .logo{
+    font-size: 35px;
+    color: #000;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.container .box .contains{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80%;
+    position: relative;
+    margin-top: 8%;
+    padding-left: 80px;
+}
+.container .box .contains .section-1{
+    position: absolute;
+    margin-top: 70px
+}
+
+.container .box .contains .section-1 h1{
+    font-size: 75px;
+}
+.container .box .contains .section-1 h3{
+    font-size: 30px;
+}
+.container .box .contains .section-1 p{
+    margin-top: 5px;
+}
+.container .box .contains .section-1 .button{
+    margin-top: 50px;
+}
+.container .box .contains .section-1 .button a{
+    cursor: pointer;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.5s ease;
+}
+.container .box .contains .section-1 .button a:hover{
+    letter-spacing: 3px;
+    background-color: hsl(194, 70%, 32%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(18, 139, 158) 0px 7px 29px 0px;
+}
+.container .box .contains .section-2 img{
+    width: 500px;
+    height: auto;
+    transform: translate(380px);
+}
+span{
+    color: red;
+}
